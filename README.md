@@ -46,15 +46,15 @@ final result set are cached within a MongoDB instance.
 
 3. Populate the configuration file values from the blank template.
    ```bash
-   cp ./config/config.template.json ./config/config.json
-   vim ./config/config.json
+   cp ./src/config/config.template.json ./src/config/config.json
+   vim ./src/config/config.json
    ```
 
 4. Start MongoDB on your machine.
 
 5. Run the server:
    ```bash
-   node server.js
+   node ./src/index.js
    ```
 
 6. Open your browser and navigate to `http://localhost:8081/` to use the web interface.

@@ -2,8 +2,28 @@ const express = require('express');
 const axios = require('axios');
 const cheerio = require('cheerio');
 
+const config = require('./config/config.json');
+
 const app = express();
-const PORT = 3000;
+const PORT = config.port || 8081;
+
+mongoose.connect('mongodb://localhost:27017/wiki-music-recommendation-api', {
+  useNewUrlParser: true, useUnifiedTopology: true })
+    .then(() => console.log('Connected to MongoDB'))
+    .catch(err => console.error('Could not connect to MongoDB: ', err));
+
+const toplevelSchema = new mongoose.Schema({
+    query: String,
+    type: String,
+    genres: [String],
+    members: {
+        current: [String],
+        past: [String]
+    },
+    yearsActive: String
+});
+
+const Result = mongoose.model('Result', toplevelSchema);
 
 app.get('/', (req, res) => {
     res.send(`
