@@ -1,5 +1,5 @@
 # Application specific configuration file
-config/config.json
+src/config/config.json
 
 # Logs
 logs
