@@ -1,3 +1,6 @@
+# Application specific configuration file
+config/config.json
+
 # Logs
 logs
 *.log

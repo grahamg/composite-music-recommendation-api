@@ -1,0 +1,40 @@
+{
+  "administrators": [
+    ("John Doe", "john.doe@gmail.com",)
+  ],
+  "port": 8081,
+  "database": [
+    "path": "./database/client.js",
+    "connection": ""
+  ],
+  "middleware": {
+    "wikipedia": {
+      "key": "",
+      "path": "./middleware/wikipedia.js"
+    },
+    "bandcamp": {
+      "key": "",
+      "path": "./middleware/bandcamp.js"
+    },
+    "lastfm": {
+      "key": "",
+      "path": "./middleware/lastfm.js"
+    },
+    "discorgs": {
+      "key": "",
+      "path": "./middleware/discorgs.js"
+    },
+    "musicovery": {
+      "key": "",
+      "path": "./middleware/musicovery.js"
+    },
+    "tastedive": {
+      "key": "",
+      "path": "./middleware/tastedive.js"
+    },
+    "youtube": {
+      "key": "",
+      "path": "./middleware/youtube.js"
+    }
+  }
+}

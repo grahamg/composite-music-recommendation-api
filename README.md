@@ -44,14 +44,20 @@ final result set are cached within a MongoDB instance.
    npm install
    ```
 
-3. Start MongoDB on your machine.
+3. Populate the configuration file values from the blank template.
+   ```bash
+   cp ./config/config.template.json ./config/config.json
+   vim ./config/config.json
+   ```
 
-4. Run the server:
+4. Start MongoDB on your machine.
+
+5. Run the server:
    ```bash
    node server.js
    ```
 
-5. Open your browser and navigate to `http://localhost:8081/` to use the web interface.
+6. Open your browser and navigate to `http://localhost:8081/` to use the web interface.
 
 ### Configuration
 
