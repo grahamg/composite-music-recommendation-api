@@ -1,16 +1,20 @@
 {
-  "name": "wiki-music-recommendation-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "name": "composite-music-recommendation-api",
+  "version": "0.0.1",
+  "description": "An API that allows users to provide a song or music group and retrieve information like similar music suggestions based on the initial genre, members, years active, and more.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recursive ./test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["music", "recommendation", "suggest", "playlist", "mp3",
+    "youtube", "genres"],
+  "author": "Graham Greenfield",
+  "license": "MIT",
   "devDependencies": {
-    "eslint": "8.48.0"
+    "chai": "^4.3.8",
+    "eslint": "8.48.0",
+    "mocha": "^10.2.0",
+    "sinon": "^15.2.0"
   },
   "dependencies": {
     "axios": "^0.21.1",
