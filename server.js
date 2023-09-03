@@ -5,6 +5,20 @@ const cheerio = require('cheerio');
 const app = express();
 const PORT = 3000;
 
+app.get('/', (req, res) => {
+    res.send(`
+        <html>
+            <body>
+                <h2>Enter a song or music group:</h2>
+                <form action="/search" method="get">
+                    <input type="text" name="q" placeholder="e.g. The_Beatles" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </body>
+        </html>
+    `);
+});
+
 app.get('/search', async (req, res) => {
     const query = req.query.q;
 
