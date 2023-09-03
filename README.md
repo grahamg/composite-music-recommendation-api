@@ -66,40 +66,40 @@ The project uses a `config.json` file to define pluggable middlewares. To add or
 Example:
 ```json
 {
-  "administrators": [
-    ("John Doe", "john.doe@gmail.com",)
-  ],
-  "port": 8081,
-  "database": [
-    "path": "./database/client.js",
-    "connection": "mongodb://localhost:27017/composite-music-recommend-api"
-  ],
-  "middleware": {
-    "wikipedia": {
-      "key": "EFEFCATScatssandwich$#$#$",
-      "path": "./middleware/wikipedia.js"
-    },
-    "lastfm": {
-      "key": "AE(FNE#$#$#$#4(F))",
-      "path": "./middleware/lastfm.js"
-    },
-    "discorgs": {
-      "key": "abcedg#$%",
-      "path": "./middleware/discorgs.js"
-    },
-    "musicovery": {
-      "key": "abc125($@)",
-      "path": "./middleware/musicovery.js"
-    },
-    "tastedive": {
-      "key": "abc122!@#",
-      "path": "./middleware/tastedive.js"
-    },
-    "youtube": {
-      "key": "abc123!@#",
-      "path": "./middleware/youtube.js"
-    }
-  }
+	"administrators": {
+		"John Doe": "john.doe@gmail.com"
+	},
+	"port": 8081,
+	"database": {
+		"path": "./database/client.js",
+		"connection": "mongodb://localhost:27017/composite-music-recommend-api"
+	},
+	"middleware": {
+		"wikipedia": {
+			"key": "...",
+			"path": "./middleware/wikipedia.js"
+		},
+		"lastfm": {
+			"key": "...",
+			"path": "./middleware/lastfm.js"
+		},
+		"discorgs": {
+			"key": "...",
+			"path": "./middleware/discorgs.js"
+		},
+		"musicovery": {
+			"key": "...",
+			"path": "./middleware/musicovery.js"
+		},
+		"tastedive": {
+			"key": "...",
+			"path": "./middleware/tastedive.js"
+		},
+		"youtube": {
+			"key": "...",
+			"path": "./middleware/youtube.js"
+		}
+	}
 }
 ```
 

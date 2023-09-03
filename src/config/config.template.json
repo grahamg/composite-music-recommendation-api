@@ -1,39 +1,39 @@
 {
-  "administrators": [
-    ("John Doe", "john.doe@gmail.com",)
-  ],
+  "administrators": {
+    "Firstname Lastname": "admin@example.com"
+  },
   "port": 8081,
   "database": [
     "path": "./database/client.js",
-    "connection": ""
+    "connection": "mongodb://localhost:27017/composite-music-recommend-api"
   ],
   "middleware": {
     "wikipedia": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/wikipedia.js"
     },
     "bandcamp": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/bandcamp.js"
     },
     "lastfm": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/lastfm.js"
     },
     "discorgs": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/discorgs.js"
     },
     "musicovery": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/musicovery.js"
     },
     "tastedive": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/tastedive.js"
     },
     "youtube": {
-      "key": "",
+      "key": "...",
       "path": "./middleware/youtube.js"
     }
   }
